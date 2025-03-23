@@ -1,0 +1,124 @@
+@import url(https://fonts.bunny.net/css?family=climate-crisis:400|fascinate:400);
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Chango&family=DM+Serif+Text:ital@0;1&family=Ultra&display=swap');
+
+h1{
+    text-align: center;
+}
+#header {
+    float: left;
+    font-family:'Fascinate', display;
+    font-weight:100;
+    font-size: 36px;
+    line-height: 1.2; 
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+#header a{
+    border: none;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(250, 238, 220);
+    margin: 10px;
+    color: #1c1e0d;
+    font-size: 20px;
+    font-family: fabric serif;
+   
+}
+
+.flexcontainer{
+    display: flex;
+    /* justify-content: center; */
+    max-width: 1200px; /*set a max width for centering effect */
+    margin: auto; /*keeps it centered on large screens*/
+}
+
+
+
+.navBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;   
+    top: 0;
+    border-bottom: grey thin solid;
+    background-color: rgb(250, 238, 220);
+    padding: 0px 20px;
+    margin-top: 0px;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    font-family: 'Fascinate', display;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#header img {
+    margin-right: 10px; /* Adds space between the logo and text */
+}
+
+.navLinks {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navLinks li {
+    margin: 0 10px;
+}
+
+.navLinks li a {
+    text-decoration: none;
+    color: black;
+    padding: 5px 10px;
+    border: 1px solid;
+    border-bottom: 3px solid;
+    border-radius: 3px;
+    background-color: #A2ebd1;
+    transition: background-color 0.1s, color 0.1s;
+}
+
+.navLinks li a:hover {
+    background-color: rgb(246, 216, 47);
+    border-bottom: 1px solid;
+    color: black ;
+}
+
+
+#icons {
+    display: flex;
+    gap: 10px; /* Adds space between icons */
+}
+
+#icons img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+#icons img:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+    background-color: rgb(246, 216, 47);
+    border-radius: 5px;
+    filter: brightness(1); /* Brighten the icon on hover*/
+}
+
+.site-footer {
+    display: flex;
+    background-color: transparent; 
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    padding: 60px 0 5px;
+    width: 100%;
+}
+
+

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+
+        #nameFont {
+            font-family: "DM Serif Text", serif;
+            font-weight: 400;
+            font-size: 60px;
+            font-style: normal;
+        }
+
+
+
+        .Mecontainer {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            /* Two columns */
+            gap: 20px;
+            /* Space between items */
+            background-color: #ddc688;
+            /* Dark green background */
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .MeItem {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            /* Space between icon and text */
+            background-color: #f8f3e0;
+            /* Darker green */
+            padding: 30px;
+            border-radius: 15px;
+            color: #5e5743;
+            transition: transform 0.3s ease;
+        }
+
+        .MeItem:hover {
+            transform: scale(1.05);
+            /* Slight zoom */
+            color: #1c1e0d;
+            /* let the edge of the box brighten and be white*/
+            box-shadow: 0 0 10px rgb(252, 252, 252);
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navBar">
+        <div id="header">
+            <a href="index.html">
+                <img src="https://cdn.pixabay.com/photo/2017/05/12/15/16/hexagon-2307350_1280.png" width="50"
+                    alt="html logo">
+            </a>
+            <span style="font-size: 40px;">The OVM Project</span>
+        </div>
+
+        <!-- Navigation Links -->
+        <ul class="navLinks">
+            <li><a href="#">About Me</a></li>
+            <li><a href="#">Skills</a></li>
+            <li><a href="page4.html">Services</a></li>
+            <li><a href="art.html">Art</a></li>
+        </ul>
+
+        <!-- Social Media Icons -->
+        <div id="icons">
+            <a href="https://www.instagram.com/olaleyevictor42/" target="_blank"><img width="40" height="40"
+                    src="https://img.icons8.com/sf-regular/48/instagram-new.png" alt="Instagram" /></a>
+            <a href="https://www.linkedin.com/in/olaleye-victor/" target="_blank"><img width="40" height="40"
+                    src="https://img.icons8.com/sf-regular/48/linkedin.png" alt="LinkedIn" /></a>
+            <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/new-post.png" alt="new-post" />
+        </div>
+    </nav>
+
+
+
+    <div class="flexcontainer">
+        <div>
+            <h4>
+                Hi, I'm
+                </h5>
+                <h2 id="nameFont">
+                    Victor Olaleye
+                </h2>
+                <p>
+                    Innovative problem solver with a passion for creating secure & scalable solutions. Leveraging
+                    cutting edge technologies to craft intuitive user experiences and robust backend systems. Let's
+                    build the future of tech together
+                </p>
+        </div>
+    </div>
+
+    <div class="flexcontainer">
+        <div>
+            <h1>
+                About Me
+            </h1>
+            <p>
+                I'm a first-year Computer Science student with a passion for cybersecurity and programming. Proficient
+                in C++, C and VBA, I am currently expanding my expertise through the Google Cybersecurity Certificate
+                while gaining hands-on experience with platforms like TryHackMe and HackTheBox. Beyond technology, I
+                love making arts specializing in pencil and charcoal portrait drawings, a beginner pianist and always
+                striving to blend creativity with impactful design.
+            </p>
+            <p>
+                What sets me apart is my blend of technical proficiency and creative problem solving. I don't just write
+                code; I craft experiences. Each project is an opportunity to explore new possibilities and deliver
+                solutions that exceed expectations.
+            </p>
+            <p>
+                If you're seeking a dedicated professional to transform complex challenges into secure, efficient, and
+                innovative solutions, let's connect and create impactful technology together.
+            </p>
+        </div>
+    </div>
+
+
+
+    <div class="Mecontainer">
+        <div class="MeItem">
+            <i class="fas fa-user-gear"></i> Unparalleled Technical Expertise
+        </div>
+        <div class="MeItem">
+            <i class="fas fa-chart-line"></i> Data Driven Solutions
+        </div>
+        <div class="MeItem">
+            <i class="fas fa-headset"></i> Dedicated Client Support
+        </div>
+        <div class="MeItem">
+            <i class="fas fa-sync"></i> Innovative Problem Solving
+        </div>
+        <div class="MeItem">
+            <i class="fas fa-code"></i> Dynamic Development Approach
+        </div>
+        <div class="MeItem">
+            <i class="fas fa-shield-alt"></i> Cybersecurity Focus
+        </div>
+        <div class="MeItem">
+            <i class="fas fa-book"></i> Continuous Learning
+        </div>
+        <div class="MeItem">
+            <i class="fas fa-users"></i> Collaborative Mindset
+        </div>
+    </div>
+
+    <div class="flexcontainer">
+        <div class="site-footer">
+            <p>Made with ❤️ by Victor Olaleye</p>
+            <p>© 2025 Victor Olaleye. All rights reserved.</p>
+        </div>
+       
+    </div>
+    
+</body>
+
+</html>

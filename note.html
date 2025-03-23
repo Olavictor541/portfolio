@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Network+</title>
+    <link rel="stylesheet" href="main.css">
+
+</head>
+
+<body>
+    <nav class="navBar">
+        <div id="header">
+            <a href="index.html">
+                <img src="https://cdn.pixabay.com/photo/2017/05/12/15/16/hexagon-2307350_1280.png" width="50"
+                    alt="html logo">
+            </a>
+            <span style="font-size: 40px;">The OVM Project</span>
+        </div>
+
+        <!-- Navigation Links -->
+        <ul class="navLinks">
+            <li><a href="#">About Me</a></li>
+            <li><a href="#">Skills</a></li>
+            <li><a href="page4.html">Services</a></li>
+            <li><a href="art.html">Art</a></li>
+        </ul>
+        
+        <!-- Social Media Icons -->
+        <div id="icons">
+            <a href="https://www.instagram.com/olaleyevictor42/" target="_blank"><img width="40" height="40"
+                    src="https://img.icons8.com/sf-regular/48/instagram-new.png" alt="Instagram" /></a>
+            <a href="https://www.linkedin.com/in/olaleye-victor/" target="_blank"><img width="40" height="40"
+                    src="https://img.icons8.com/sf-regular/48/linkedin.png" alt="LinkedIn" /></a>
+            <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/new-post.png" alt="new-post" />
+        </div>
+    </nav>
+
+
+
+    <p>#Date: 09/07/2024</p>
+
+    <div class="flexcontainer">
+        <div>
+            <h1 id="1-1-the-osi-model-">1.1 – <em>The OSI Model</em></h1>
+        <h2 id="understanding-the-osi-model">Understanding the OSI Model</h2>
+        <h3 id="what-is-the-osi-model-">What is the OSI Model?</h3>
+        <p>The OSI model, or Open Systems Interconnection Reference Model, is like a guide that helps us understand how
+            different network devices communicate with each other. Think of it as a blueprint for network communication.
+            It’s made up of seven layers, each with its own job. Here’s a quick way to remember them: <strong>All People
+                Seem To Need Data Processing</strong>.</p>
+        <h3 id="layer-1-physical-layer">Layer 1: Physical Layer</h3>
+        <p><strong>What it does:</strong> This layer is all about the physical stuff like cables and connectors.
+            <strong>Why it’s important:</strong> It deals with the actual hardware that sends signals over the network.
+            <strong>Real-world example:</strong> If your internet isn’t working, you might have a “physical layer
+            problem,”
+            like a bad cable.
+        </p>
+        <h3 id="layer-2-data-link-layer">Layer 2: Data Link Layer</h3>
+        <p><strong>What it does:</strong> This layer is like the basic language of the network. It manages how data is
+            framed and transferred between devices on the same network.
+            <strong>Why it’s important:</strong> It uses MAC addresses to direct data to the correct device.
+            <strong>Real-world example:</strong> Think of it as the “switching” layer that helps devices on the same
+            network
+            communicate.
+        </p>
+        <h3 id="layer-3-network-layer">Layer 3: Network Layer</h3>
+        <p><strong>What it does:</strong> This is the “routing” layer. It handles the movement of data between different
+            networks using IP addresses.
+            <strong>Why it’s important:</strong> It ensures that data packets get to their destination.
+            <strong>Real-world example:</strong> It’s like a GPS that helps data find the best route to reach another
+            network.
+        </p>
+        <h3 id="layer-4-transport-layer">Layer 4: Transport Layer</h3>
+        <p><strong>What it does:</strong> This layer is like the post office. It ensures data is sent and received
+            correctly
+            using protocols like TCP and UDP.
+            <strong>Why it’s important:</strong> It manages the delivery and error-checking of data packets.
+            <strong>Real-world example:</strong> It’s like making sure your letters and parcels are delivered safely.
+        </p>
+        <h3>Layer 5: Session Layer</h3>
+        <p><strong>What it does:</strong> Manages sessions or connections between devices.
+            <strong>Why it’s important:</strong> It controls the start, stop, and restart of communication sessions.
+            <strong>Real-world example:</strong> Think of it as the layer that sets up and tears down calls in a
+            conference.
+        </p>
+        <h3>Layer 6: Presentation Layer</h3>
+        <p><strong>What it does:</strong> This layer translates data into a format that the application layer can
+            understand.
+            <strong>Why it’s important:</strong> It handles data encryption and character encoding.
+            <strong>Real-world example:</strong> It’s like translating a foreign language so that you can understand the
+            data.
+        </p>
+        <h3>Layer 7: Application Layer</h3>
+        <p><strong>What it does:</strong> This is the layer you interact with directly. It includes protocols like HTTP,
+            FTP, and DNS.
+            <strong>Why it’s important:</strong> It provides network services directly to applications.
+            <strong>Real-world example:</strong> When you browse the web, send an email, or use a chat app, you’re using
+            the
+            application layer.
+        </p>
+        <h3>Real-World Examples from the Images</h3>
+        <h4>First Image</h4>
+        <ul>
+            <li><strong>Layer 7 (Application):</strong> Your eyes.</li>
+            <li><strong>Layer 6 (Presentation):</strong> Application encryption like SSL/TLS.</li>
+            <li><strong>Layer 5 (Session):</strong> Control protocols and tunneling protocols.</li>
+            <li><strong>Layer 4 (Transport):</strong> TCP segments and UDP datagrams.</li>
+            <li><strong>Layer 3 (Network):</strong> IP addresses, routers, and packets.</li>
+            <li><strong>Layer 2 (Data Link):</strong> Frames, MAC addresses, and switches.</li>
+            <li><strong>Layer 1 (Physical):</strong> Cables, fiber, and the actual signals.</li>
+        </ul>
+        <h4>Second Image</h4>
+        <ul>
+            <li><strong>Layer 7 (Application):</strong> Example: <a
+                    href="https://mail.google.com">https://mail.google.com</a></li>
+            <li><strong>Layer 6 (Presentation):</strong> SSL encryption.</li>
+            <li><strong>Layer 5 (Session):</strong> Linking the presentation to the transport.</li>
+            <li><strong>Layer 4 (Transport):</strong> TCP encapsulation.</li>
+            <li><strong>Layer 3 (Network):</strong> IP encapsulation.</li>
+            <li><strong>Layer 2 (Data Link):</strong> Ethernet.</li>
+            <li><strong>Layer 1 (Physical):</strong> Electrical signals.</li>
+        </ul>
+        <h2>Data Communication</h2>
+        <h4>PDU (Protocol Data Unit)</h4>
+        <ul>
+            <li><strong>Transmission Units:</strong> Different types of data units used at different OSI layers.<ul>
+                    <li><strong>Ethernet:</strong> Uses frames.</li>
+                    <li><strong>IP (Internet Protocol):</strong> Uses packets.</li>
+                    <li><strong>TCP/UDP:</strong> TCP uses segments, and UDP uses datagrams.</li>
+                </ul>
+            </li>
+        </ul>
+        
+        <div class="flexcontainer">
+            <img src="screenshots/Screen Shot 2024-07-09 at 9.54.54 AM.jpg" alt="OSI Model" width="500">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <img src="screenshots/Screen Shot 2024-07-09 at 9.53.34 AM.jpg" alt="screenshot" width="500">
+        </div>
+        <h4>TCP Flags</h4>
+        <ul>
+            <li><strong>Purpose:</strong> The TCP header includes flags to manage and control data transmission.<ul>
+                    <li><strong>SYN:</strong> Synchronizes sequence numbers to start a connection.</li>
+                    <li><strong>PSH:</strong> Pushes data to the application immediately.</li>
+                    <li><strong>RST:</strong> Resets the connection.</li>
+                    <li><strong>FIN:</strong> Indicates the last packet from the sender.</li>
+                </ul>
+            </li>
+        </ul>
+        <h3 id="what-is-ip-fragmentation-">What is IP Fragmentation?</h3>
+        <img src="screenshots/Screen Shot 2024-07-09 at 9.58.31 AM.jpg" alt="IP Fragmentation" width="500">
+        <h4 id="image-explanation">Image Explanation</h4>
+        <ul>
+            <li><strong>Original Packet:</strong> Contains a TCP Header (20 bytes) and TCP Data (24 bytes).</li>
+            <li><strong>Fragmentation:</strong> The data is divided into smaller pieces called fragments because it’s
+                too
+                large to be sent as one piece.<ul>
+                    <li><strong>Fragment 1:</strong> Bytes 1-16 of the original data.</li>
+                    <li><strong>Fragment 2:</strong> Bytes 17-32.</li>
+                    <li><strong>Fragment 3:</strong> Bytes 33-44.</li>
+                </ul>
+            </li>
+            <li><strong>Headers:</strong> Each fragment gets its own IP Header and DLC (Data Link Control) Header.</li>
+            <li><strong>Note:</strong> Fragments are always in multiples of 8 due to the way fragmentation works in the
+                IP
+                header.<h3 id="maximum-transmission-unit-mtu-">Maximum Transmission Unit (MTU)</h3>
+            </li>
+        </ul>
+
+        <ul>
+            <li><strong>Definition:</strong> The largest IP packet that can be sent without fragmentation.</li>
+            <li><strong>Fragmentation Issues:</strong> Slows down communication and can lead to data loss if a fragment
+                is
+                lost.</li>
+            <li><strong>Overhead:</strong> Requires extra processing along the path.</li>
+            <li><strong>MTU Challenges:</strong> It’s hard to determine the MTU across the entire path, and automated
+                methods can be inaccurate.</li>
+        </ul>
+        <h1 id="1-2-network-topologies-and-types-">1.2 – <em>Network Topologies and Types</em></h1>
+        <h2 id="network-topologies">Network Topologies</h2>
+        <h4 id="overview-">Overview:</h4>
+        <p>Network topologies describe the physical and logical layout of a network. They are useful for planning new
+            networks, understanding signal flow, and troubleshooting problems.</p>
+        <h4 id="types-of-network-topologies-">Types of Network Topologies:</h4>
+        <ol>
+            <li>
+                <p><strong>Star Topology</strong>:</p>
+                <ul>
+                    <li><strong>Hub and Spoke</strong>: Common in both large and small networks.</li>
+                    <li><strong>Central Device</strong>: All devices are connected to a central switch.</li>
+                    <li><strong>Advantages</strong>: Easy to manage and troubleshoot.</li>
+                    <li><strong>Disadvantages</strong>: If the central switch fails, the entire network is affected.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p><strong>Ring Topology</strong>:</p>
+                <ul>
+                    <li><strong>Usage</strong>: Popular in many topologies, especially Metro Area Networks (MANs) and
+                        Wide
+                        Area Networks (WANs).</li>
+                    <li><strong>Dual-Rings</strong>: Provides built-in fault tolerance.</li>
+                    <li><strong>Token Ring</strong>: An older technology, no longer widely used.</li>
+                </ul>
+            </li>
+            <li>
+                <p><strong>Mesh Topology</strong>:</p>
+                <ul>
+                    <li><strong>Multiple Links</strong>: Multiple paths to the same destination.</li>
+                    <li><strong>Fully Connected vs. Partially Connected</strong>: Redundancy, fault-tolerance, and load
+                        balancing.</li>
+                    <li><strong>Usage</strong>: Common in WANs.</li>
+                </ul>
+            </li>
+            <li>
+                <p><strong>Hybrid Topology</strong>:</p>
+                <ul>
+                    <li><strong>Combination</strong>: Mix of different physical topologies.</li>
+                    <li><strong>Common</strong>: Most networks use a hybrid approach for flexibility and resilience.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p><strong>Wireless Topologies</strong>:</p>
+                <ul>
+                    <li><strong>Infrastructure Mode</strong>: Devices communicate through an access point (most common).
+                    </li>
+                    <li><strong>Ad Hoc Mode</strong>: No pre-existing infrastructure; devices communicate directly.</li>
+                    <li><strong>Mesh Networks</strong>: Devices work together to form a mesh &quot;cloud&quot;,
+                        self-forming
+                        and self-healing.</li>
+                </ul>
+            </li>
+        </ol>
+        <h2 id="network-types">Network Types</h2>
+        <ol>
+            <li>
+                <p><strong>Peer-to-Peer (P2P)</strong>:</p>
+                <ul>
+                    <li><strong>All Devices are Both Clients and Servers</strong>: Everyone can communicate with
+                        everyone.
+                    </li>
+                    <li><strong>Advantages</strong>: Easy to deploy, low cost.</li>
+                    <li><strong>Disadvantages</strong>: Difficult to administer and secure.</li>
+                </ul>
+            </li>
+            <li>
+                <p><strong>Local Area Network (LAN)</strong>:</p>
+                <ul>
+                    <li><strong>Definition</strong>: Covers a building or group of buildings.</li>
+                    <li><strong>Characteristics</strong>: High-speed connectivity using Ethernet and 802.11 wireless.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p><strong>Metropolitan Area Network (MAN)</strong>:</p>
+                <ul>
+                    <li><strong>Definition</strong>: Covers a city or metropolitan area.</li>
+                    <li><strong>Characteristics</strong>: Larger than a LAN, smaller than a WAN. Often government-owned
+                        infrastructure.</li>
+                </ul>
+            </li>
+            <li>
+                <p><strong>Wide Area Network (WAN)</strong>:</p>
+                <ul>
+                    <li><strong>Definition</strong>: Spans large geographical areas, often connecting LANs.</li>
+                    <li><strong>Characteristics</strong>: Generally slower than LANs, uses various technologies (e.g.,
+                        MPLS,
+                        point-to-point).</li>
+                </ul>
+            </li>
+            <li>
+                <p><strong>Wireless LAN (WLAN)</strong>:</p>
+                <ul>
+                    <li><strong>Definition</strong>: A LAN that uses wireless technology (802.11).</li>
+                    <li><strong>Characteristics</strong>: Provides mobility within a building or limited area, can
+                        expand
+                        coverage with additional access points.</li>
+                </ul>
+            </li>
+            <li>
+                <p><strong>Personal Area Network (PAN)</strong>:</p>
+                <ul>
+                    <li><strong>Definition</strong>: A small network for personal use.</li>
+                    <li><strong>Technologies</strong>: Bluetooth, IR, NFC.</li>
+                    <li><strong>Usage</strong>: In devices like mobile phones, headsets, automobiles, and health
+                        monitors.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p><strong>Campus Area Network (CAN)</strong>:</p>
+                <ul>
+                    <li><strong>Definition</strong>: A network covering a campus or group of buildings.</li>
+                    <li><strong>Characteristics</strong>: Uses LAN technologies like high-speed Ethernet, often
+                        fiber-connected.</li>
+                </ul>
+            </li>
+        </ol>
+        </div>
+         
+    </div>
+
+</body>
+
+</html>

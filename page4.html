@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+        .skills, .services {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 1rem;
+            flex: 1 1 300px;
+        }
+    </style>
+
+</head>
+<body>
+    <nav class="navBar">
+        <div id="header">
+            <a href="index.html">
+                <img src="https://cdn.pixabay.com/photo/2017/05/12/15/16/hexagon-2307350_1280.png" width="50"
+                    alt="html logo">
+            </a>
+            <span style="font-size: 40px;">The OVM Project</span>
+        </div>
+
+        <!-- Navigation Links -->
+        <ul class="navLinks">
+            <li><a href="#">About Me</a></li>
+            <li><a href="#">Skills</a></li>
+            <li><a href="page4.html">Services</a></li>
+            <li><a href="art.html">Art</a></li>
+        </ul>
+
+        <!-- Social Media Icons -->
+        <div id="icons">
+            <a href="https://www.instagram.com/olaleyevictor42/" target="_blank"><img width="40" height="40"
+                    src="https://img.icons8.com/sf-regular/48/instagram-new.png" alt="Instagram" /></a>
+            <a href="https://www.linkedin.com/in/olaleye-victor/" target="_blank"><img width="40" height="40"
+                    src="https://img.icons8.com/sf-regular/48/linkedin.png" alt="LinkedIn" /></a>
+            <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/new-post.png" alt="new-post" />
+        </div>
+    </nav>
+
+    <h1>My Services</h1>
+
+    <div class="flexcontainer">
+        <div class="services">
+            <div class="card">
+                <p>Web development is the work involved in developing a Web site for the Internet (World Wide Web) or an intranet (a private network).</p>
+            </div>
+            <div class="card">
+                <p>Web development is the work involved in developing a Web site for the Internet (World Wide Web) or an intranet (a private network).</p>
+            </div>
+        </div>
+
+        <div class="services">
+            <div class="card">
+                <p>Web development is the work involved in developing a Web site for the Internet (World Wide Web) or an intranet (a private network).</p>
+            </div>
+            <div class="card">
+                <p>Web development is the work involved in developing a Web site for the Internet (World Wide Web) or an intranet (a private network).</p>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
