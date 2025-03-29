@@ -4,8 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Arts</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="mediaQueries.css">
+    <!--link css file for icon from font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <style>
         .gallery {
             max-width: 1200px;
@@ -13,10 +16,6 @@
             margin: auto;
         }
 
-        .img {
-            width: 50%;
-            height: auto;
-        }
 
         #caption{
             font-size: 15px;
@@ -26,13 +25,11 @@
             max-width: 100%;
         }
 
-        .gallery p{
+        .description{
             font-size: 18px;
-            text-align: left;
             color: #333;
             font-style: italic;
             margin-top: 10px;
-            max-width: 50%;
         }
         
 
@@ -42,19 +39,19 @@
 <body>
 
     <nav class="navBar">
-        <div id="header">
+        <div class="logo">
             <a href="index.html">
                 <img src="https://cdn.pixabay.com/photo/2017/05/12/15/16/hexagon-2307350_1280.png" width="50"
                     alt="html logo">
             </a>
-            <span style="font-size: 40px;">The OVM Project</span>
+            <span>The OVM Project</span>
         </div>
 
         <!-- Navigation Links -->
         <ul class="navLinks">
-            <li><a href="#">About Me</a></li>
+            <li><a href="index.html">About Me</a></li>
             <li><a href="#">Skills</a></li>
-            <li><a href="page4.html">Services</a></li>
+            <li><a href="page4.html">Experience</a></li>
             <li><a href="art.html">Art</a></li>
         </ul>
 
@@ -67,6 +64,29 @@
             <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/new-post.png" alt="new-post" />
         </div>
     </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo">
+            <a href="index.html">
+                <img src="https://cdn.pixabay.com/photo/2017/05/12/15/16/hexagon-2307350_1280.png" width="50"
+                    alt="html logo">
+            </a>
+            <span>The OVM Project</span>
+        </div>
+        <div class="hamburger-menu" onclick="toggleMenu()">
+            <p>Menu</p>
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <ul class="menu-links">
+            <li><a href="index.html" onclick="toggleMenu()">About Me</a></li>
+            <li><a href="#Skills" onclick="toggleMenu()">Skills</a></li>
+            <li><a href="page4.html" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="art.html" onclick="toggleMenu()">Art</a></li>
+        </ul>
+    </nav>
+    <script src="script.js"></script>
+
 
 
 
@@ -83,25 +103,25 @@
         <div>
             <p class="description">I describe my realistic portraits as "a simple language of my feeling." Using graphite and charcoal pencils, I draw with such detail capturing every emotion. My art is a reflection of my growth—each stroke and shade a testament to my dedication.&nbsp;</p>
             
-            <p>As a pencil and charcoal portrait artist, I am constantly improving, refining my technique to capture not just the likeness of my subjects but the depth of their emotions.</p>
+            <p class="description">As a pencil and charcoal portrait artist, I am constantly improving, refining my technique to capture not just the likeness of my subjects but the depth of their emotions.</p>
 
         </p>
         </div>
 
         <div>
-            <img src="img/IMG_1208.jpeg" alt="Art" class="img">
+            <img src="img/IMG_1208.jpeg" alt="Art" class="art">
             <p id="caption">"The Seeing Eyes Portrait"</p>
-            <p>For me, drawing is more than just a skill; it is a way of seeing and understanding the world and scripture. Every portrait I create is a quiet conversation between my tools and my vision, an exploration of light, texture, and form. While I don’t paint, I find endless expression in the subtle gradients of graphite and charcoal, allowing shadows and highlights to breathe life into my work.</p>
+            <p class="description">For me, drawing is more than just a skill; it is a way of seeing and understanding the world and scripture. Every portrait I create is a quiet conversation between my tools and my vision, an exploration of light, texture, and form. While I don’t paint, I find endless expression in the subtle gradients of graphite and charcoal, allowing shadows and highlights to breathe life into my work.</p>
         </div>
 
         <div>
-            <img src="img/1000035642.JPG" alt="Art" class="img">
+            <img src="img/1000035642.JPG" alt="Art" class="art">
             <p id="caption">"Mindfulness #1"</p>
-            <p>Art is a journey, and mine is still unfolding. Through each piece, I push myself further, always striving to see more and translate what I feel into something tangible. My work reflects my progress, my passion, and my commitment to capturing the essence of human presence in every line and detail.</p>
+            <p class="description">Art is a journey, and mine is still unfolding. Through each piece, I push myself further, always striving to see more and translate what I feel into something tangible. My work reflects my progress, my passion, and my commitment to capturing the essence of human presence in every line and detail.</p>
         </div>
 
         <div>
-            <img src="img/1000042633.JPG" alt="Art" class="img">
+            <img src="img/1000042633.JPG" alt="Art" class="art">
             <p id="caption">"Arewa(Beauty) Portrait"</p>
         </div>
     </div>

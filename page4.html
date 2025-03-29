@@ -3,41 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Experience</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="mediaQueries.css">
+    <!--link css file for icon from font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <style>
-        .skills, .services {
-            display: grid;
-            grid-template-columns: repeat(1, 1fr);
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: center;
+        h3{
+            margin-top: 10px;
+            margin-bottom: 10px;
         }
-        .card {
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            padding: 1rem;
-            flex: 1 1 300px;
+        p{
+            margin-top: 5px;
         }
     </style>
-
 </head>
 <body>
     <nav class="navBar">
-        <div id="header">
+        <div class="logo">
             <a href="index.html">
                 <img src="https://cdn.pixabay.com/photo/2017/05/12/15/16/hexagon-2307350_1280.png" width="50"
                     alt="html logo">
             </a>
-            <span style="font-size: 40px;">The OVM Project</span>
+            <span>The OVM Project</span>
         </div>
 
         <!-- Navigation Links -->
         <ul class="navLinks">
-            <li><a href="#">About Me</a></li>
+            <li><a href="index.html">About Me</a></li>
             <li><a href="#">Skills</a></li>
-            <li><a href="page4.html">Services</a></li>
+            <li><a href="page4.html">Experience</a></li>
             <li><a href="art.html">Art</a></li>
         </ul>
 
@@ -51,28 +46,99 @@
         </div>
     </nav>
 
-    <h1>My Services</h1>
-
-    <div class="flexcontainer">
-        <div class="services">
-            <div class="card">
-                <p>Web development is the work involved in developing a Web site for the Internet (World Wide Web) or an intranet (a private network).</p>
-            </div>
-            <div class="card">
-                <p>Web development is the work involved in developing a Web site for the Internet (World Wide Web) or an intranet (a private network).</p>
-            </div>
+    <nav id="hamburger-nav">
+        <div class="logo">
+            <a href="index.html">
+                <img src="https://cdn.pixabay.com/photo/2017/05/12/15/16/hexagon-2307350_1280.png" width="50"
+                    alt="html logo">
+            </a>
+            <span>The OVM Project</span>
+        </div>
+        <div class="hamburger-menu" onclick="toggleMenu()">
+            <p>Menu</p>
+            <i class="fas fa-bars"></i>
         </div>
 
-        <div class="services">
-            <div class="card">
-                <p>Web development is the work involved in developing a Web site for the Internet (World Wide Web) or an intranet (a private network).</p>
-            </div>
-            <div class="card">
-                <p>Web development is the work involved in developing a Web site for the Internet (World Wide Web) or an intranet (a private network).</p>
-            </div>
+        <ul class="menu-links">
+            <li><a href="index.html" onclick="toggleMenu()">About Me</a></li>
+            <li><a href="#Skills" onclick="toggleMenu()">Skills</a></li>
+            <li><a href="page4.html" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="art.html" onclick="toggleMenu()">Art</a></li>
+        </ul>
+    </nav>
+    <script src="script.js"></script>
 
+    <div id="experience">
+        <p class="text_p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+    
+        <div class="experience-container">
+            <!-- Frontend Development -->
+            <div class="details-container">
+                <h2 class="experience-sub-title">Frontend Development</h2>
+                <div class="article-container">
+                    <div class="article">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <div>
+                            <h3>HTML</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </div>
+                    <div class="article">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <div>
+                            <h3>CSS</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </div>
+                    <div class="article">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <div>
+                            <h3>JavaScript</h3>
+                            <p>Basic</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Cybersecurity -->
+            <div class="details-container">
+                <h2 class="experience-sub-title">Cybersecurity</h2>
+                <div class="article-container">
+                    <div class="article">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <div>
+                            <h3>Network Security</h3>
+                            <p>Basic</p>
+                        </div>
+                    </div>
+                    <div class="article">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <div>
+                            <h3>Penetration Testing</h3>
+                            <p>Basic</p>
+                        </div>
+                    </div>
+                    <div class="article">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <div>
+                            <h3>Threat Modeling</h3>
+                            <p>Basic</p>
+                        </div>
+                    </div>
+                    <div class="article">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <div>
+                            <h3>Incident Response</h3>
+                            <p>Basic</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+    
+   
 
 </body>
 </html>
