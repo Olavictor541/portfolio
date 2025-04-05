@@ -81,4 +81,12 @@
     .article-container img{
         width: 350px;
     }
+    .exp_layout{
+        flex-direction: column;
+        gap: 0;
+        margin-bottom: 0;
+    }
+    .section{
+        margin: 0;
+    }
 }
